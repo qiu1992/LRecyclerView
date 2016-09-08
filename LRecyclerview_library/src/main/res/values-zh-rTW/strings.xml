@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">LRecyclerview</string>
+
+    <string name="listview_header_hint_normal">下拉更新</string>
+    <string name="listview_header_hint_release">釋放立即更新</string>
+    <string name="listview_loading">正在載入&#8230;</string>
+    <string name="nomore_loading">没有了</string>
+    <string name="refreshing">正在更新&#8230;</string>
+    <string name="refresh_done">更新完成</string>
+    <string name="listview_header_last_time">上次更新時間：</string>
+
+    <!--footer-->
+    <string name="list_footer_loading">正在載入中…</string>
+    <string name="list_footer_network_error">點擊重新載入</string>
+    <string name="list_footer_end">已全部載入完</string>
+
+    <string name="text_just">剛剛</string>
+    <string name="text_seconds_ago">秒前</string>
+    <string name="text_minute_ago">分鐘前</string>
+    <string name="text_hour_ago">小時前</string>
+    <string name="text_day_ago">日前</string>
+    <string name="text_month_ago">月前</string>
+    <string name="text_year_ago">年前</string>
+</resources>
