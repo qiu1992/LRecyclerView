@@ -120,6 +120,19 @@ public class LRecyclerView extends RecyclerView {
 
     }
 
+    public void onDataChange ()
+    {
+        mDataObserver.onChanged();
+    }
+
+    public void setFootViewVisiable (int viewVisiable)
+    {
+        if (null != mFootView)
+        {
+            mFootView.setVisibility (viewVisiable);
+        }
+    }
+
     private class DataObserver extends RecyclerView.AdapterDataObserver {
         @Override
         public void onChanged() {

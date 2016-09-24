@@ -39,9 +39,9 @@ public class RecyclerViewStateUtils {
         LRecyclerViewAdapter lRecyclerViewAdapter = (LRecyclerViewAdapter) outerAdapter;
 
         //只有一页的时候，就别加什么FooterView了
-        if (lRecyclerViewAdapter.getInnerAdapter().getItemCount() < pageSize) {
-            return;
-        }
+//        if (lRecyclerViewAdapter.getInnerAdapter().getItemCount() < pageSize) {
+//            return;
+//        }
 
         LoadingFooter footerView;
         //已经有footerView了
@@ -57,7 +57,15 @@ public class RecyclerViewStateUtils {
             }
 
         }
-        recyclerView.scrollToPosition(lRecyclerViewAdapter.getItemCount() - 1);
+
+        if (lRecyclerViewAdapter.getInnerAdapter().getItemCount() < pageSize)
+        {
+            recyclerView.scrollToPosition (0);
+        }
+        else
+        {
+            recyclerView.scrollToPosition (lRecyclerViewAdapter.getItemCount () - 1);
+        }
 
     }
 
