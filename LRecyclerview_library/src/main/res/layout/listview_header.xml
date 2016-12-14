@@ -21,6 +21,7 @@
             android:id="@+id/listview_header_text">
 
             <TextView
+                android:textColor="@android:color/white"
                 android:id="@+id/refresh_status_textview"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -35,10 +36,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:textColor="@android:color/white"
                     android:text="@string/listview_header_last_time"
                     android:textSize="12sp" />
 
                 <TextView
+                    android:textColor="@android:color/white"
                     android:id="@+id/last_refresh_time"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
